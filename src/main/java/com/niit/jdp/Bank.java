@@ -25,4 +25,10 @@ public abstract class Bank {
     private String bankCountryName;
     private String bankStateCode;
     private String bankStateName;
+    //create a no args constructor
+
+    public Bank() {
+    }
+    // create a parameterised args constructor
+
 }
