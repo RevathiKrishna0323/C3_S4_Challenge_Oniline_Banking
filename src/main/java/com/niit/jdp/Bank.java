@@ -8,7 +8,7 @@ package com.niit.jdp;
 
 public abstract class Bank {
     // define the fields of the Bank object
-    private String accountNumber;
+    private long accountNumber;
     private String accountType;
     private String accountName;
     private String bankName;
@@ -21,11 +21,8 @@ public abstract class Bank {
     private String bankCode;
     private String bankCountry;
     private String bankState;
-    private String bankCountryCode;
-    private String bankCountryName;
-    private String bankStateCode;
-    private String bankStateName;
-    private String accountBalance;
+    private int bankCountryCode;
+    private double accountBalance;
     private String accountStatus;
     private Boolean isMobileBankingEnabled;
     //create a no args constructor
@@ -34,7 +31,8 @@ public abstract class Bank {
     }
     // create a parameterised args constructor
 
-    public Bank(String accountNumber, String accountType, String accountName, String bankName, String branchName, String address, String IFSC_Code, String city, String accountOpenDate, String modeOfOperation, String bankCode, String bankCountry, String bankState, String bankCountryCode, String bankCountryName, String bankStateCode, String bankStateName, String accountBalance, String accountStatus, Boolean isMobileBankingEnabled) {
+
+    public Bank(long accountNumber, String accountType, String accountName, String bankName, String branchName, String address, String IFSC_Code, String city, String accountOpenDate, String modeOfOperation, String bankCode, String bankCountry, String bankState, int bankCountryCode, double accountBalance, String accountStatus, Boolean isMobileBankingEnabled) {
         this.accountNumber = accountNumber;
         this.accountType = accountType;
         this.accountName = accountName;
@@ -49,22 +47,17 @@ public abstract class Bank {
         this.bankCountry = bankCountry;
         this.bankState = bankState;
         this.bankCountryCode = bankCountryCode;
-        this.bankCountryName = bankCountryName;
-        this.bankStateCode = bankStateCode;
-        this.bankStateName = bankStateName;
         this.accountBalance = accountBalance;
         this.accountStatus = accountStatus;
         this.isMobileBankingEnabled = isMobileBankingEnabled;
     }
+    // getters   and setters
 
-
-    // create a getters and setters
-
-    public String getAccountNumber() {
+    public long getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    public void setAccountNumber(long accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -164,43 +157,19 @@ public abstract class Bank {
         this.bankState = bankState;
     }
 
-    public String getBankCountryCode() {
+    public int getBankCountryCode() {
         return bankCountryCode;
     }
 
-    public void setBankCountryCode(String bankCountryCode) {
+    public void setBankCountryCode(int bankCountryCode) {
         this.bankCountryCode = bankCountryCode;
     }
 
-    public String getBankCountryName() {
-        return bankCountryName;
-    }
-
-    public void setBankCountryName(String bankCountryName) {
-        this.bankCountryName = bankCountryName;
-    }
-
-    public String getBankStateCode() {
-        return bankStateCode;
-    }
-
-    public void setBankStateCode(String bankStateCode) {
-        this.bankStateCode = bankStateCode;
-    }
-
-    public String getBankStateName() {
-        return bankStateName;
-    }
-
-    public void setBankStateName(String bankStateName) {
-        this.bankStateName = bankStateName;
-    }
-
-    public String getAccountBalance() {
+    public double getAccountBalance() {
         return accountBalance;
     }
 
-    public void setAccountBalance(String accountBalance) {
+    public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
     }
 
