@@ -50,4 +50,141 @@ public abstract class Bank {
         this.bankStateCode = bankStateCode;
         this.bankStateName = bankStateName;
     }
+    // create a getters and setters
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
+    }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+
+    public String getBranchName() {
+        return branchName;
+    }
+
+    public void setBranchName(String branchName) {
+        this.branchName = branchName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getIFSC_Code() {
+        return IFSC_Code;
+    }
+
+    public void setIFSC_Code(String IFSC_Code) {
+        this.IFSC_Code = IFSC_Code;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getAccountOpenDate() {
+        return accountOpenDate;
+    }
+
+    public void setAccountOpenDate(String accountOpenDate) {
+        this.accountOpenDate = accountOpenDate;
+    }
+
+    public String getModeOfOperation() {
+        return modeOfOperation;
+    }
+
+    public void setModeOfOperation(String modeOfOperation) {
+        this.modeOfOperation = modeOfOperation;
+    }
+
+    public String getBankCode() {
+        return bankCode;
+    }
+
+    public void setBankCode(String bankCode) {
+        this.bankCode = bankCode;
+    }
+
+    public String getBankCountry() {
+        return bankCountry;
+    }
+
+    public void setBankCountry(String bankCountry) {
+        this.bankCountry = bankCountry;
+    }
+
+    public String getBankState() {
+        return bankState;
+    }
+
+    public void setBankState(String bankState) {
+        this.bankState = bankState;
+    }
+
+    public String getBankCountryCode() {
+        return bankCountryCode;
+    }
+
+    public void setBankCountryCode(String bankCountryCode) {
+        this.bankCountryCode = bankCountryCode;
+    }
+
+    public String getBankCountryName() {
+        return bankCountryName;
+    }
+
+    public void setBankCountryName(String bankCountryName) {
+        this.bankCountryName = bankCountryName;
+    }
+
+    public String getBankStateCode() {
+        return bankStateCode;
+    }
+
+    public void setBankStateCode(String bankStateCode) {
+        this.bankStateCode = bankStateCode;
+    }
+
+    public String getBankStateName() {
+        return bankStateName;
+    }
+
+    public void setBankStateName(String bankStateName) {
+        this.bankStateName = bankStateName;
+    }
 }
