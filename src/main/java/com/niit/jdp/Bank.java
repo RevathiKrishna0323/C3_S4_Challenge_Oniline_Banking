@@ -31,4 +31,23 @@ public abstract class Bank {
     }
     // create a parameterised args constructor
 
+    public Bank(String accountNumber, String accountType, String accountName, String bankName, String branchName, String address, String IFSC_Code, String city, String accountOpenDate, String modeOfOperation, String bankCode, String bankCountry, String bankState, String bankCountryCode, String bankCountryName, String bankStateCode, String bankStateName) {
+        this.accountNumber = accountNumber;
+        this.accountType = accountType;
+        this.accountName = accountName;
+        this.bankName = bankName;
+        this.branchName = branchName;
+        this.address = address;
+        this.IFSC_Code = IFSC_Code;
+        this.city = city;
+        this.accountOpenDate = accountOpenDate;
+        this.modeOfOperation = modeOfOperation;
+        this.bankCode = bankCode;
+        this.bankCountry = bankCountry;
+        this.bankState = bankState;
+        this.bankCountryCode = bankCountryCode;
+        this.bankCountryName = bankCountryName;
+        this.bankStateCode = bankStateCode;
+        this.bankStateName = bankStateName;
+    }
 }
