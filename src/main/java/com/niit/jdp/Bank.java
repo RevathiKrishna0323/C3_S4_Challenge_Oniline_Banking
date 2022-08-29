@@ -25,13 +25,16 @@ public abstract class Bank {
     private String bankCountryName;
     private String bankStateCode;
     private String bankStateName;
+    private String accountBalance;
+    private String accountStatus;
+    private Boolean isMobileBankingEnabled;
     //create a no args constructor
 
     public Bank() {
     }
     // create a parameterised args constructor
 
-    public Bank(String accountNumber, String accountType, String accountName, String bankName, String branchName, String address, String IFSC_Code, String city, String accountOpenDate, String modeOfOperation, String bankCode, String bankCountry, String bankState, String bankCountryCode, String bankCountryName, String bankStateCode, String bankStateName) {
+    public Bank(String accountNumber, String accountType, String accountName, String bankName, String branchName, String address, String IFSC_Code, String city, String accountOpenDate, String modeOfOperation, String bankCode, String bankCountry, String bankState, String bankCountryCode, String bankCountryName, String bankStateCode, String bankStateName, String accountBalance, String accountStatus, Boolean isMobileBankingEnabled) {
         this.accountNumber = accountNumber;
         this.accountType = accountType;
         this.accountName = accountName;
@@ -49,7 +52,12 @@ public abstract class Bank {
         this.bankCountryName = bankCountryName;
         this.bankStateCode = bankStateCode;
         this.bankStateName = bankStateName;
+        this.accountBalance = accountBalance;
+        this.accountStatus = accountStatus;
+        this.isMobileBankingEnabled = isMobileBankingEnabled;
     }
+
+
     // create a getters and setters
 
     public String getAccountNumber() {
@@ -186,5 +194,29 @@ public abstract class Bank {
 
     public void setBankStateName(String bankStateName) {
         this.bankStateName = bankStateName;
+    }
+
+    public String getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(String accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
+    }
+
+    public Boolean getMobileBankingEnabled() {
+        return isMobileBankingEnabled;
+    }
+
+    public void setMobileBankingEnabled(Boolean mobileBankingEnabled) {
+        isMobileBankingEnabled = mobileBankingEnabled;
     }
 }
